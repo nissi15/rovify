@@ -190,13 +190,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // 7. Theme Toggle
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
+        const sunIcon = themeToggle.querySelector('.sun-icon');
+        const moonIcon = themeToggle.querySelector('.moon-icon');
         themeToggle.addEventListener('click', (e) => {
             e.preventDefault();
             document.body.classList.toggle('light-theme');
             if (document.body.classList.contains('light-theme')) {
-                themeToggle.innerText = 'DARK MODE';
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
             } else {
-                themeToggle.innerText = 'LIGHT MODE';
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
             }
         });
     }
