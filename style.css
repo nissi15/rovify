@@ -22,6 +22,15 @@ body.light-theme {
   --accent-green: #00731d;
 }
 
+body.light-theme .nav-link {
+  color: #000000;
+  font-weight: 800;
+}
+
+body.light-theme .bento-card {
+  background: #ffffff;
+}
+
 body.light-theme .bento-card img.cover-img {
   opacity: 0.06 !important;
 }
@@ -179,6 +188,7 @@ body {
 
 .nav-link:hover {
   color: var(--text-primary);
+  opacity: 0.8;
 }
 
 .join-btn {
