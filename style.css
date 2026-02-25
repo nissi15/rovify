@@ -39,6 +39,15 @@ body.light-theme .neon-green {
   text-shadow: none;
 }
 
+body.light-theme .whoop-track {
+  fill: var(--bg-color) !important;
+  stroke: var(--border-color) !important;
+}
+
+body.light-theme .whoop-progress-anim {
+  stroke-width: 12 !important;
+}
+
 body.light-theme .brand img {
   filter: brightness(0);
 }
