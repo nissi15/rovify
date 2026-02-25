@@ -41,11 +41,22 @@ body.light-theme .neon-green {
 
 body.light-theme .whoop-track {
   fill: var(--bg-color) !important;
-  stroke: var(--border-color) !important;
+  stroke: rgba(0, 0, 0, 0.15) !important;
+  stroke-width: 16px !important;
 }
 
 body.light-theme .whoop-progress-anim {
-  stroke-width: 12 !important;
+  stroke-width: 16px !important;
+}
+
+body.light-theme .dial-center span.text-primary {
+  color: #000000 !important;
+  font-weight: 900 !important;
+}
+
+body.light-theme .whoop-dial-container .circle-ring {
+  border-width: 4px !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
 }
 
 body.light-theme .brand img {
