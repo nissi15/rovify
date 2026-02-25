@@ -18,8 +18,16 @@ body.light-theme {
   --surface-color: #ffffff;
   --border-color: rgba(0, 0, 0, 0.1);
   --text-primary: #111111;
-  --text-muted: #666666;
-  --accent-green: #00b32c;
+  --text-muted: #4d4d4d;
+  --accent-green: #00731d;
+}
+
+body.light-theme .bento-card img.cover-img {
+  opacity: 0.06 !important;
+}
+
+body.light-theme .neon-green {
+  text-shadow: none;
 }
 
 body.light-theme .brand img {
