@@ -63,6 +63,23 @@ body.light-theme .whoop-dial-container svg {
   background: transparent !important;
 }
 
+body.light-theme .whoop-pill-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .whoop-pill-marker {
+  background: #000000;
+}
+
+body.light-theme .floating-data-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .live-chart .bar {
+  background: #000000;
+}
+
 body.light-theme .brand img {
   filter: brightness(0);
 }
@@ -720,6 +737,14 @@ h1.accent {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.whoop-pill-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.whoop-pill-marker {
+  background: #ffffff;
 }
 
 .whoop-progress-anim {
