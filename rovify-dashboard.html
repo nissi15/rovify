@@ -860,6 +860,50 @@
       animation: pulse 2s infinite;
       flex-shrink: 0;
     }
+
+    /* RESPONSIVE LAYOUT FOR DASHBOARD */
+    @media (max-width: 960px) {
+      .dashboard {
+        grid-template-columns: 1fr;
+      }
+
+      .right-panel {
+        display: none;
+      }
+
+      .stat-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .stat-row {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar-right {
+        display: none;
+      }
+
+      .chart-wrap {
+        height: 120px;
+      }
+
+      th {
+        letter-spacing: .05em;
+        font-size: 8px;
+      }
+
+      td {
+        font-size: 10px;
+        padding: 8px 6px 8px 0;
+      }
+
+      .main-content {
+        padding: 12px;
+      }
+    }
   </style>
 </head>
 

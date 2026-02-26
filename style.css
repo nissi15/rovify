@@ -410,8 +410,6 @@ h1.accent {
   transition: all 0.5s ease;
 }
 
-.glass-panel:hover .cover-img {}
-
 /* Floating widgets inside Hero */
 .floating-data-card {
   position: absolute;
@@ -1156,5 +1154,39 @@ h1.accent {
 
   .status {
     align-items: center;
+  }
+
+  /* Ensure the embedded dashboard iframe gets sufficient minimum height on mobile */
+  .hero-visual-block {
+    height: auto;
+    min-height: 450px;
+  }
+
+  .glass-panel {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-visual-block {
+    min-height: 380px;
+  }
+
+  .glass-panel {
+    min-height: 380px;
+  }
+
+  .floating-data-card {
+    display: none;
+    /* Hide floating popup data cards to clear space for the embedded dashboard */
+  }
+
+  h1 {
+    font-size: 15vw;
+  }
+
+  .hero-subtext {
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
   }
 }
